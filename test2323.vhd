@@ -114,7 +114,7 @@ BEGIN
       wait for clock_period;
       regDst<='1'; jump<='0' ; regWrite<='1'; Memtoreg<='0'; memwrite<='0' ;memread<='0' ;aluSrc<='0'  ;aluCnt<="0000"  ;branch<='0';
       wait for clock_period;
-      regDst<='1'; jump<='0' ; regWrite<='1'; Memtoreg<='1'; memwrite<='0'; memread<='1' ;aluSrc<='1' ; aluCnt<="0010" ; branch<='0';
+      regDst<='0'; jump<='0' ; regWrite<='1'; Memtoreg<='1'; memwrite<='0'; memread<='1' ;aluSrc<='1' ; aluCnt<="0010" ; branch<='0';
       wait for clock_period;
 
 
