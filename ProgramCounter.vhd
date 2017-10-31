@@ -20,7 +20,7 @@ architecture beh of ProgramCounter is
 	process(clock)
 		begin
 		current_address <= address;
-		if clock='0' and clock'event then
+		if clock='1' and clock'event then
 			address <= address_to_load;
 		end if;
 	end process;
